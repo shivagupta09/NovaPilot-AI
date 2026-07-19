@@ -22,6 +22,6 @@ dependencyResolutionManagement {
   }
 }
 
-rootProject.name = "NovaPilot AI"
+rootProject.name = "YT.ai"
 
 include(":app")

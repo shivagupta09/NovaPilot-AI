@@ -221,38 +221,28 @@ fun HeaderSection(
                     .clickable { onNavigate("landing") }
                     .testTag("brand_logo_header")
             ) {
-                Box(
+                Image(
+                    painter = painterResource(id = R.drawable.img_app_logo),
+                    contentDescription = "YT.ai Logo",
                     modifier = Modifier
                         .size(40.dp)
                         .clip(RoundedCornerShape(12.dp))
-                        .background(
-                            Brush.linearGradient(
-                                colors = listOf(PrimaryIndigo, AccentPurple)
-                            )
-                        ),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Icon(
-                        imageVector = Icons.Default.Bolt,
-                        contentDescription = "NovaPilot Icon",
-                        tint = Color.White,
-                        modifier = Modifier.size(24.dp)
-                    )
-                }
+                        .border(1.5.dp, Color.White.copy(alpha = 0.15f), RoundedCornerShape(12.dp)),
+                    contentScale = ContentScale.Crop
+                )
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(
-                    text = "NovaPilot",
+                    text = "YT",
                     color = Color.White,
                     fontWeight = FontWeight.Black,
-                    fontSize = 18.sp,
+                    fontSize = 20.sp,
                     letterSpacing = (-0.5).sp
                 )
                 Text(
-                    text = "AI",
-                    color = PrimaryIndigo,
+                    text = ".ai",
+                    color = Color(0xFFFF0000),
                     fontWeight = FontWeight.Black,
-                    fontSize = 18.sp,
-                    modifier = Modifier.padding(start = 2.dp)
+                    fontSize = 20.sp,
                 )
             }
 
@@ -462,7 +452,7 @@ fun LandingView(
         ) {
             Image(
                 painter = painterResource(id = R.drawable.img_hero_banner),
-                contentDescription = "NovaPilot Cosmic Hero Visual Banner",
+                contentDescription = "YT.ai Cosmic Hero Visual Banner",
                 modifier = Modifier.fillMaxSize(),
                 contentScale = ContentScale.Crop
             )
@@ -637,7 +627,7 @@ fun LandingView(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    text = "Join NovaPilot Dispatch",
+                    text = "Join YT.ai Dispatch",
                     color = Color.White,
                     fontWeight = FontWeight.Bold,
                     fontSize = 18.sp,
@@ -692,7 +682,7 @@ fun LandingView(
         Divider(color = Color.White.copy(alpha = 0.05f))
         Spacer(modifier = Modifier.height(20.dp))
         Text(
-            text = "© 2026 NovaPilot Inc. Powered by advanced neural architecture pipelines globally.",
+            text = "© 2026 YT.ai Inc. Powered by advanced neural architecture pipelines globally.",
             color = TextMuted,
             fontSize = 11.sp,
             textAlign = TextAlign.Center,
@@ -868,7 +858,7 @@ fun AuthView(
                     fontSize = 22.sp
                 )
                 Text(
-                    text = "Access NovaPilot Global AI Workspace Engine",
+                    text = "Access YT.ai Global AI Workspace Engine",
                     color = TextMuted,
                     fontSize = 11.sp,
                     modifier = Modifier.padding(top = 4.dp, bottom = 24.dp)
@@ -1605,7 +1595,7 @@ fun DashboardApiTab(
                 fontSize = 20.sp
             )
             Text(
-                text = "Build external applications directly backed by NovaPilot pipelines",
+                text = "Build external applications directly backed by YT.ai pipelines",
                 color = TextMuted,
                 fontSize = 12.sp,
                 modifier = Modifier.padding(bottom = 6.dp)

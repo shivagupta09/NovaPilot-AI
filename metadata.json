@@ -1,5 +1,5 @@
 {
-  "name": "NovaPilot AI",
+  "name": "YT.ai",
   "description": "Unified AI-powered companion workspace for creators, writers, and developers.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
